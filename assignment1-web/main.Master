@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="Assignment1_shaffi.Site1" %>
+
+<!DOCTYPE html>
+<!---Name:Shaffi Khurana--->
+<!---Student Id: 300876288----->
+<!---Assignment1-------->
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title></title>
+   
+    <!---Css section---->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+    <link href="MyStyles.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header role="navigation">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Portfolio</a>
+                   
+
+        
+      
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Default.aspx"><i class="fa fa-home " aria-hidden="true"></i> Home</a></li>
+                        <li><a href="About.aspx"><i class="fa fa-info " aria-hidden="true"></i> About</a></li>
+                        <li><a href="Projects.aspx"><i class="fa fa-bars " aria-hidden="true"></i> Projects</a></li>
+                        <li><a href="Services.aspx"><i class="fa fa-cog " aria-hidden="true"></i> Services</a></li>
+                        <li><a href="Contact.aspx"><i class="fa fa-phone " aria-hidden="true"></i> Contact Information</a></li>
+
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+            </header>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <!---footer section---->
+          <footer role="contentInfo">
+              <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+                       
+                <h4> 
+    &copy; Shaffi Khurana-Fall Semester 2016-Centennial College</h4>
+            </div>
+                  </nav>
+        
+    </footer> 
+
+    </form>
+    <!------javascript section----->
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
+
